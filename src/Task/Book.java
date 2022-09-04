@@ -2,13 +2,29 @@ package Task;
 
 public class Book {
 
-    public String nameBook;
-    public String authorName;
-    public int yearPublication;
+    private final String nameBook;
+    private final Author authorName;
+    private int yearPublication;
 
-    Book(String nameBook, String authorName, int yearPublication) {
+    public Book(String nameBook, Author authorName, int yearPublication) {
         this.nameBook = nameBook;
         this.authorName = authorName;
+        this.yearPublication = yearPublication;
+    }
+
+    public String getNameBook() {
+        return nameBook;
+    }
+
+    public Author getAuthorName() {
+        return authorName;
+    }
+
+    public int getYearPublication() {
+        return yearPublication;
+    }
+
+    public void setYearPublication(int yearPublication) {
         this.yearPublication = yearPublication;
     }
 
@@ -16,7 +32,7 @@ public class Book {
     public String toString() {
         return "Book{" +
                 "nameBook='" + nameBook + '\'' +
-                ", authorName='" + authorName + '\'' +
+                ", author=" + authorName +
                 ", yearPublication=" + yearPublication +
                 '}';
     }

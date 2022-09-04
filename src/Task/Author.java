@@ -1,12 +1,11 @@
 package Task;
 
 public class Author {
-    public String firstName;
-    public String lastName;
+    private final String firstName;
+    private final String lastName;
 
     public Author(String firstName, String lastName) {
         this.firstName = firstName;
-
         this.lastName = lastName;
     }
 
