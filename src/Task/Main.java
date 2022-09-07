@@ -15,5 +15,8 @@ public class Main {
         System.out.println(book1.getNameBook() + " " + book1.getAuthorName() + " " + book1.getYearPublication());
         System.out.println(book2.getNameBook() + " " + book2.getAuthorName() + " " + book2.getYearPublication());
         System.out.println(book3.getNameBook() + " " + book3.getAuthorName() + " " + book3.getYearPublication());
+
+        book2.setYearPublication(2022);
+        System.out.println(book2.getNameBook() + " " + book2.getAuthorName() + " " + book2.getYearPublication());
     }
 }
